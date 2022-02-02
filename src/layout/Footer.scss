@@ -1,0 +1,30 @@
+@import "../styles/main";
+
+.footer-contain{
+    @include column;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 3px 2px 8px 3px rgba(0,0,0,0.43);
+}
+.contact-contain{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .card-contact{
+        background-color: rgb(229, 229, 229);
+        border-radius: 100%;
+        &:hover{
+            transition: 0.2s;
+            transform: scale(110%);
+        }
+        img{
+            display: block;
+            margin: auto;
+            padding: 10px;
+            width: 30px;
+            
+        }
+    }
+}

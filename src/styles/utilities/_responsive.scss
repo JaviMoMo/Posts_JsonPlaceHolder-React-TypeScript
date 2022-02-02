@@ -1,0 +1,26 @@
+@import "../fonts/typo";
+
+$tablet: 768px;
+$desktop: 992px;
+$large: 1200px;
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @include base-typo(20, $font-weight-small, 0.15);
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @include base-typo(30, $font-weight-medium, 0.3);
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large) {
+    @include base-typo(40, $font-weight-large, 0.45);
+    @content;
+  }
+}

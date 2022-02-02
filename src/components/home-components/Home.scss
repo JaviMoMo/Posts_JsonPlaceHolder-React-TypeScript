@@ -1,0 +1,14 @@
+@import "../../styles/main";
+
+.home-contain {
+    @include column;
+    text-align: center;
+    .home-text-contain{
+        margin: 20px;
+        @include column;
+        p{
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+}

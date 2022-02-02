@@ -1,0 +1,70 @@
+@import "../../styles/main";
+
+.cardList-contain{
+    .cardList-loginButton{
+        width: 70px;
+        align-self: center;
+        margin-bottom: 20px;
+        border: $secondary-color solid 2px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 10px;
+        @include base-typo(15px, bolder, 1px);
+        &:hover{
+            transition: 0.2s;
+            background-color:  $primary-color;
+            cursor: pointer;
+        }
+    }
+    .cardList-buttons-contain{
+        button{
+            margin: 10px;
+            margin-bottom: 26px;
+            padding: 10px;
+            border: 2px solid $secondary-color;
+            border-radius: 5px;
+            background-color: $secondary-color;
+            color: $primary-color;
+            @include base-typo(15px, bolder, 0);
+            cursor: pointer;
+            &:hover{
+                transition: 0.2s;
+                border: 2px solid $primary-color;
+            }
+        
+        }
+        
+    }
+    .cardList-cards-contain{
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+}
+
+.card-container{
+    @include column;
+    margin-bottom: 20px;
+    .card-container-buttons{
+        @include row;
+        justify-content: space-evenly;
+        .card-container-button{
+            align-self: center;
+            padding: 5px;
+            width: 90px;
+            border: 2px solid $secondary-color;
+            border-radius: 10px;
+            background-color: $primary-color;
+            color: $secondary-color;
+            @include base-typo(13px, bolder, 1px);
+            cursor: pointer;
+            &:hover{
+                transition: 0.2s;
+                background-color: whitesmoke;
+            }
+        }
+    }
+}
+

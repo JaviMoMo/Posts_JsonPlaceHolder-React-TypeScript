@@ -1,0 +1,87 @@
+@import "../../styles/main";
+
+.login-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(110, 75, 81, 0.342);
+}
+
+.login-contain{
+    background-color: $primary-color;
+    padding: 80px;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px $secondary-color solid;
+    box-shadow: 3px 2px 8px 3px rgba(0,0,0,0.43);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    .login-closeButton{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        button{
+            padding: 0;
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;background-color: none;
+            border: 2px solid whitesmoke;
+            font-size: 20px;
+            font-weight: bold;
+            color: $secondary-color;
+            opacity: 0.7;
+            &:hover{
+                transition: 0.2s;
+                transform: scale(105%);
+                opacity: 1;
+                border: 2px solid $secondary-color;
+            }
+        }
+    }
+    .login-title{
+        color: $secondary-color;
+        p{
+            @include base-typo(40px, bolder, 0);
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+    form{
+        @include column;
+        input{
+            margin: 10px;
+            height: 40px;
+            width: 250px;
+            font-size: 30px;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid $secondary-color;
+            border-radius: 5px;
+            background-color: $secondary-color;
+            color: $primary-color;
+            @include base-typo(15px, bolder, 0);
+            cursor: pointer;
+            &:hover{
+                transition: 0.2s;
+                border: 2px solid $primary-color;
+            }
+        }
+    }
+}
+
+@media (max-width : 576px) {
+    .login-contain{
+        padding: 20px;
+    }
+}

@@ -1,0 +1,97 @@
+@import "../../styles/main";
+
+.form-edit-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(110, 75, 81, 0.342);
+}
+
+.form-edit-contain{
+    @include column;
+    background-color: $primary-color;
+    padding: 80px;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px $secondary-color solid;
+    box-shadow: 3px 2px 8px 3px rgba(0,0,0,0.43);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    .form-edit-title{
+        @include base-typo(40px, bolder, 0);
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .form-edit-closeButton{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;background-color: none;
+        border: 2px solid whitesmoke;
+        font-size: 20px;
+        font-weight: bold;
+        color: $secondary-color;
+        opacity: 0.7;
+        &:hover{
+            transition: 0.2s;
+            transform: scale(105%);
+            opacity: 1;
+            border: 2px solid $secondary-color;
+        }
+    }
+    fieldset{
+        @include column;
+        border: none;
+        p{
+            @include base-typo(30px, 0, 0);
+            margin: 0;
+            margin-top: 10px;
+        }
+        .input-title{
+            margin: 10px;
+            height: 30px;
+            width: 250px;
+            font-size: 20px;
+        }
+        .input-body{
+            align-items: flex-start;
+            margin: 10px;
+            height: 100px;
+            width: 250px;
+            font-size: 17px;
+            font-family: 'M PLUS 2', sans-serif;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid $secondary-color;
+            border-radius: 5px;
+            background-color: $secondary-color;
+            color: $primary-color;
+            @include base-typo(15px, bolder, 0);
+            cursor: pointer;
+            &:hover{
+                transition: 0.2s;
+                border: 2px solid $primary-color;
+            }
+        }
+    }
+}
+
+@media (max-width : 576px) {
+    .form-edit-contain{
+        padding: 20px;
+    }
+}

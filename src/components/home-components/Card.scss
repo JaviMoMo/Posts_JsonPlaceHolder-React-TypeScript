@@ -1,0 +1,82 @@
+@import "../../styles/main";
+
+.card{
+    @include column;
+    justify-content: center;
+    border: solid 3px $secondary-color;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 3px;
+    box-shadow: 1px 0.5px 4px 1px rgba(0,0,0,0.43);
+    &:hover{
+        transition: 0.3s;
+        transform: scale(101%);
+        box-shadow: 3px 2px 8px 3px rgba(0,0,0,0.43);
+    }
+    .card-title{
+        @include base-typo(18px, bold, 0px);
+        align-self: center;
+       
+    }
+    .card-body{
+        align-self: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 300px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width : 576px) {
+    .card{
+        width: 250px;
+        .card-body{
+            width: 250px;
+        }
+    }
+
+}
+
+.card.is-open {
+    height: auto;
+    .card-title{
+        white-space: normal;
+    }
+    .card-body{
+        align-self: center;
+        white-space: normal;
+    }
+}
+
+//Animation
+
+.card {
+	-webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+	        animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+ @-webkit-keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+  }
+  @keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+  }
+  

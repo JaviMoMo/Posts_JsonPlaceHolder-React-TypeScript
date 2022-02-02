@@ -1,0 +1,12 @@
+@import "../styles/main";
+
+.content{
+    margin-inline: 150px;
+}
+
+@media (max-width : 576px) {
+    .content{
+        margin-inline: 20px;
+    }
+
+}
