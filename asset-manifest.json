@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/javike19/Posts_JsonPlaceHolder-React-TypeScript/static/css/main.4fdcc3ee.css",
-    "main.js": "/javike19/Posts_JsonPlaceHolder-React-TypeScript/static/js/main.0060f74a.js",
-    "static/js/787.6e1cd169.chunk.js": "/javike19/Posts_JsonPlaceHolder-React-TypeScript/static/js/787.6e1cd169.chunk.js",
-    "index.html": "/javike19/Posts_JsonPlaceHolder-React-TypeScript/index.html",
-    "main.4fdcc3ee.css.map": "/javike19/Posts_JsonPlaceHolder-React-TypeScript/static/css/main.4fdcc3ee.css.map",
-    "main.0060f74a.js.map": "/javike19/Posts_JsonPlaceHolder-React-TypeScript/static/js/main.0060f74a.js.map",
-    "787.6e1cd169.chunk.js.map": "/javike19/Posts_JsonPlaceHolder-React-TypeScript/static/js/787.6e1cd169.chunk.js.map"
+    "main.css": "/Posts_JsonPlaceHolder-React-TypeScript/static/css/main.4fdcc3ee.css",
+    "main.js": "/Posts_JsonPlaceHolder-React-TypeScript/static/js/main.8d939d86.js",
+    "static/js/787.6e1cd169.chunk.js": "/Posts_JsonPlaceHolder-React-TypeScript/static/js/787.6e1cd169.chunk.js",
+    "index.html": "/Posts_JsonPlaceHolder-React-TypeScript/index.html",
+    "main.4fdcc3ee.css.map": "/Posts_JsonPlaceHolder-React-TypeScript/static/css/main.4fdcc3ee.css.map",
+    "main.8d939d86.js.map": "/Posts_JsonPlaceHolder-React-TypeScript/static/js/main.8d939d86.js.map",
+    "787.6e1cd169.chunk.js.map": "/Posts_JsonPlaceHolder-React-TypeScript/static/js/787.6e1cd169.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fdcc3ee.css",
-    "static/js/main.0060f74a.js"
+    "static/js/main.8d939d86.js"
   ]
 }
